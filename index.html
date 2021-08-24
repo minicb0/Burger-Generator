@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Burger Generator</h1>
+    <div class="contentWrapper">
+        <div class="inputContainer">
+            <div>
+                <div class="textInputDiv">
+                    <label for="veggies">Number of Veggies (Rs. 10)</label>
+                    <input type="number" name="veggies" id="veggies" min="0" value="1" class="inputNumber">
+                </div>
+                <div class="textInputDiv">
+                    <label for="cheese">Number of Cheese (Rs. 15)</label>
+                    <input type="number" name="cheese" id="cheese" min="0" value="1" class="inputNumber">
+                </div>
+                <div class="textInputDiv">
+                    <label for="meat">Number of Meats (Rs. 20)</label>
+                    <input type="number" name="meat" id="meat" min="0" value="1" class="inputNumber">
+                </div>
+            </div>
+        </div>
+        <div class="burgerContainer">
+            <div id="priceDiv">
+                Calculated Price - Rs.
+                <span id="price">0</span>
+            </div>
+            <div id="burger"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
